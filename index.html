@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Explorer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎬 Movie Explorer</h1>
+    <p>Search & Discover Movies</p>
+</header>
+
+<div class="search-section">
+    <input type="text" id="searchInput" placeholder="Enter movie title">
+    <button onclick="searchMovie()">Search</button>
+
+    <select id="sortOption" onchange="sortMovies()">
+        <option value="">Sort By</option>
+        <option value="year">Release Year</option>
+        <option value="rating">IMDb Rating</option>
+    </select>
+</div>
+
+<h2 class="section-title">Search Results</h2>
+<div id="movieContainer" class="movie-container"></div>
+
+<h2 class="section-title">🔥 New Release Movies</h2>
+<div class="movie-container">
+    <div class="movie-card">
+        <img src="WhatsApp Image 2026-01-07 at 8.50.24 PM (1).jpeg">
+        <h3>Dune: Part Two (2024)</h3>
+    </div>
+    <div class="movie-card">
+        <img src="WhatsApp Image 2026-01-07 at 8.50.23 PM.jpeg">
+        <h3>Godzilla x Kong (2024)</h3>
+    </div>
+    <div class="movie-card">
+        <img src="WhatsApp Image 2026-01-07 at 8.59.43 PM.jpeg">
+        <h3>stranger things (2024)</h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
